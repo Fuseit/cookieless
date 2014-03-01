@@ -1,8 +1,8 @@
 source "http://rubygems.org"
-gem 'nokogiri'
 
-group :development do
-  gem "bundler", "~> 1.0.0"
-  gem "jeweler", "~> 1.6.4"
-  gem "rcov", ">= 0"
-end
+# Allow testing multiple versions
+rails_version = ENV['RAILS_VERSION'] || '>= 3.1.0'
+gem 'rails', rails_version
+
+# Specify your gem's dependencies in new.gemspec
+gemspec
