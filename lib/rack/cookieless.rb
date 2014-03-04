@@ -1,6 +1,7 @@
+require 'active_support/core_ext'
+require 'nokogiri'
 require 'digest/sha1'
 require 'uri'
-require 'active_support/core_ext'
 
 module Rack
   class Cookieless

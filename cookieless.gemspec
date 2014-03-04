@@ -21,8 +21,10 @@ Gem::Specification.new do |s|
   s.require_paths    = ["lib"]
 
   s.add_runtime_dependency "nokogiri", ">= 0"
+  s.add_runtime_dependency "rails", ">= 3.1.0"
 
   s.add_development_dependency "bundler", "~> 1.5"
   s.add_development_dependency "rake"
+  s.add_development_dependency "appraisal"
   s.add_development_dependency "rack-test"
 end

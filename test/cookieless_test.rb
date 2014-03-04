@@ -4,7 +4,7 @@ describe Rack::Cookieless do
   include Rack::Test::Methods
 
   let(:inner_app) do
-    lambda { |env| [200, env, 'app'] }
+    Rails.application
   end
 
   let(:app) do
